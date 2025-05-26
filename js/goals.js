@@ -4,6 +4,12 @@ fetch("components/homeHeader.html")
     document.getElementById("home-header").innerHTML = data;
 });
 
+fetch("components/header.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+});
+
   fetch("components/footer.html")
     .then(res => res.text())
     .then(data => {
