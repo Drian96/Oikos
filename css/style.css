@@ -205,7 +205,6 @@
 }
 
 .title-container h2 {
-  font-weight: bold;
   font-size: 35px;
   margin: 0;
   white-space: nowrap;
@@ -262,6 +261,7 @@
 }
 
 .carousel-section h1{
+  padding: 10px;
   font-size: 35px;
 }
 
@@ -281,7 +281,6 @@
   gap: 18px;
   height: auto;
   flex-wrap: wrap;
-
 }
 
 .item{
@@ -290,7 +289,6 @@
   padding: 15px;
   border-radius: 15px;
   box-shadow: 0 0 15px #808080;
-
 }
 
 .item img{
@@ -316,11 +314,6 @@
   background-color: #acacac;
   color: black;
 }
-
-
-
-
-
 
 
 /*footer*/

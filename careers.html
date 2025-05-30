@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+<body>
+    
+    <div id="header"></div>
+
+    <section class="hero-video">
+        <video autoplay muted loop playsinline>
+            <source src="/media/CAREERS BG.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="firstContainer">
+            <div class="firstContent">
+                <h1>WHO WE ARE</h1>
+                <p>Grow your career with purpose. Join a team that values innovation, collaboration, and your potential.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="careers2">
+        <h1>WE ARE ACCEPTING INTERNS!</h1>
+
+        <div class="c2main">
+
+            <div class="c2mainContent">
+                <h2>Let’s create something great together.</h2>
+                <p>We are searching for ambitious, creative, and driven individuals who are ready to build, innovate, and grow with us.</p>
+                <br>
+                <p>At Oikos Technologies, we don’t just develop digital solutions — we craft meaningful experiences. From web development to IT support and creative services, our team thrives on collaboration, curiosity, and purpose.</p>
+           
+                <button>Apply Now</button>
+
+            </div>
+
+            <div class="c2mainContent">
+                <h2>Join us.</h2>
+                <p>At Oikos Technologies, we’re more than a team — we’re a community of innovators, problem-solvers, and creators. We’re looking for individuals who are not only skilled, but curious, motivated, and ready to grow.</p>
+                <br>
+                <p>Whether you're a developer, designer, strategist, or support specialist, you’ll find a place here to sharpen your skills, take ownership, and collaborate on work that matters.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Modal -->
+    <div id="applyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>FILL OUT THE FORM</h2>
+            <form action="https://formsubmit.co/edrianangeles85@gmail.com" method="POST" enctype="multipart/form-data">
+            <input type="text" name="First Name" placeholder="FIRST NAME" required>
+            <input type="text" name="Middle Name" placeholder="MIDDLE NAME">
+            <input type="text" name="Last Name" placeholder="LAST NAME" required>
+            <input type="email" name="Email" placeholder="EMAIL" required>
+            <label>Attach Your CV Here:</label>
+            <input type="file" name="attachment" accept=".pdf,.doc,.docx" required>
+            <button type="submit">SUBMIT</button>
+            <p><a href="#" class="cancel">Cancel</a></p>
+            </form>
+        </div>
+    </div>
+
+        
+    <div id="footer"></div>
+
+    <script src="/js/goals.js"></script>
+
+    <script>
+        const modal = document.getElementById("applyModal");
+        const openBtn = document.querySelector("button"); // "Apply Now" button
+        const closeBtn = document.querySelector(".close");
+        const cancelLink = document.querySelector(".cancel");
+
+        openBtn.addEventListener("click", () => {
+            modal.style.display = "block";
+        });
+
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        cancelLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            modal.style.display = "none";
+        });
+
+        window.addEventListener("click", (e) => {
+            if (e.target == modal) {
+            modal.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>

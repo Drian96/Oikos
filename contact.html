@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+<body>
+    
+    <div id="header"></div>
+
+    <section class="hero-video">
+        <video autoplay muted loop playsinline>
+            <source src="/media/CONTACT US BG.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="firstContainer">
+            <div class="firstContent">
+                <p>We are more than just a service provider—we’re your partner in innovation. Reach out today and let’s start creating impactful solutions together.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="s2Contacts">
+        <p>We believe that great partnerships begin with a simple conversation. Whether you’re looking for innovative solutions, creative support, or a team that truly listens—your journey starts here. Reach out to us, and let’s turn your ideas into impact.</p>
+    </section>
+
+    <section class="s3Contacts">
+
+        <div class="s3main">
+            <div class="s3contactsInfo">
+                <h1>Have a project in mind or just want to say hello? </h1>
+                <br>
+                <p>We're here for you. Send us a message, and we'll respond as soon as possible.</p>
+                <button>Email Us</button>
+
+            </div>
+
+            <div class="s3contactsInfo">
+                <img src="/media/CONNECT WITH US.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="s4Contacts">
+
+        <div class="s3main">
+            <div class="s3contactsInfo">
+                <img src="/media/MAP.jpg" alt="">
+            </div>
+
+            <div class="s4contactsInfo">
+                <h1>Come Say Hi!</h1>
+                <br>
+                <p>B2 L38 Champaca St., Maligaya Park Subd., Novaliches, Quezon City, Metro Manila, Philippines 1123</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <div id="footer"></div>
+
+    <script src="/js/goals.js"></script>
+
+
+    <!-- Contact Modal -->
+    <div id="emailModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>SEND US YOUR INQUIRY/MESSAGE HERE</h2>
+        <form action="https://formsubmit.co/edrianangeles85@gmail.com" method="POST">
+        <div style="display: flex; gap: 10px;">
+            <input type="text" name="First Name" placeholder="FIRST NAME" required>
+            <input type="text" name="Last Name" placeholder="LAST NAME" required>
+        </div>
+        <input type="email" name="Email" placeholder="EMAIL" required>
+
+        <select name="Subject" required>
+            <option value="">- CHOOSE SUBJECT -</option>
+            <option value="Website Development">Website Development</option>
+            <option value="Web App Development">Web App Development</option>
+            <option value="IT Support Services">IT Support Services</option>
+            <option value="Support Request">Creative Support Services</option>
+            <option value="Creative Support Services">Social Media Management</option>
+            <option value="Virtual Admin Support Management">Virtual Admin Support Management</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label>INQUIRY/MESSAGE</label>
+        <textarea name="Message" rows="5" placeholder="Type your inquiry or message here." required></textarea>
+
+        <button type="submit">SUBMIT INQUIRY</button>
+        <p><a href="#" class="cancel">Cancel</a></p>
+        </form>
+    </div>
+    </div>
+<script>
+  const emailModal = document.getElementById("emailModal");
+  const emailBtn = document.querySelector("button"); // First <button> = "Email Us"
+  const closeEmail = document.querySelector(".close");
+  const cancelEmail = document.querySelector(".cancel");
+
+  emailBtn.addEventListener("click", () => {
+    emailModal.style.display = "block";
+  });
+
+  closeEmail.addEventListener("click", () => {
+    emailModal.style.display = "none";
+  });
+
+  cancelEmail.addEventListener("click", (e) => {
+    e.preventDefault();
+    emailModal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === emailModal) {
+      emailModal.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>
