@@ -3,7 +3,7 @@ fetch("components/homeHeader.html")
   .then(data => {
     document.getElementById("home-header").innerHTML = data;
 
-        // Now the header is loaded, we can safely attach the event listener
+    // Now the header is loaded, we can safely attach the event listener
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
 
@@ -17,6 +17,15 @@ fetch("components/header.html")
   .then(res => res.text())
   .then(data => {
     document.getElementById("header").innerHTML = data;
+
+    // Now the header is loaded, we can safely attach the event listener
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
 });
 
 fetch("components/footer.html")

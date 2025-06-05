@@ -136,10 +136,7 @@
   color: #00bcd4;
 }
 
-
-
 /*section 2*/
-
 .section2 {
     background-color: white;
     height: auto;
@@ -384,7 +381,7 @@
 /***responsive**/
 
 /***HOMEPAGE**/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 822px) {
 /*header*/
 .navbar {
   padding: 20px 20px;
@@ -420,12 +417,30 @@
   max-width: 70%;
 }
 
+footer{
+  justify-content: center;
+  align-items: center;
 }
 
+.footer-top{
+  display: none;
+}
+.mobile-footer{
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.mobile-footer img{
+  width: 50px;
+}
+.footer-bottom{
+  margin-bottom: 160px;
+}
 
+}
 
 @media only screen and (max-width: 649px) {
-
 .hamburger {
   width: 30px;
   display: flex;
@@ -531,6 +546,47 @@ footer{
 .footer-bottom{
   margin-bottom: 70px;
 }
+}
 
+@media only screen and (max-width: 416px) {
+
+.logoTitle h1 {
+  font-size: 1.8rem;
+}
+.paragraph1 {
+  font-size: 14px;
+  max-width: 80%;
+}
+.footer-bottom{
+  margin-bottom: 30px;
+}
+.nav-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+.nav-links.active {
+  transform: translateX(0);
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 20px 0;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #002cbd;
+}
 
 }
