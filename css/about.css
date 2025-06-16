@@ -174,10 +174,20 @@
   text-decoration: underline;
   margin-bottom: 1%;
 }
+
+.personCard{
+  height: 250px;
+  width: 600px;
+}
+
 .personCard img{
-  padding: 10px;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
   border-radius: 25px;
 }
+
+
 .personInfo1{
   padding: 10px;
   text-align: left;
